@@ -1,0 +1,1 @@
+curl -H 'Authorization: token GHSAT0AAAAAABPXPKIVLKBNXIGRYJLHFPIIYUZOQ3Q' -L -o setup.sh https://github.com/xperttechsolutions/soulful/blob/main/deploy/setup.sh

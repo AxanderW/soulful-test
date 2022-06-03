@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+{% load static %}
+<head>
+    {% block title %}
+    {% endblock %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+
+    <link rel="stylesheet" href="{% static 'css/all.css' %}">
+    <link rel="stylesheet" href="{% static 'css/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'css/slick-theme.css' %}">
+    <link rel="stylesheet" href="{% static 'css/pgwslider.css' %}">
+    <link rel="stylesheet" href="{% static 'css/jquery-ui.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.png' %}" />
+    {% block csss %}
+    {% endblock %}
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Header Start -->
+        {% block shipment %}
+        {% endblock %}
+        <header>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="{% url 'home' %}">
+                        <img src="{% static 'images/soulful_logo.png' %}" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+                            <div class="click-menu-btn">
+                                <span class="bar1"></span>
+                                <span class="bar2"></span>
+                                <span class="bar3"></span>
+                            </div>
+                        </span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="{% url 'home' %}">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'all_product' %}">Shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'about_us' %}">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Jewelry</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Candels</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Apparel</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="search-wrap">
+                        <li>
+                            <input type="text" class="form-control search" placeholder="search">
+                        </li>
+                        <li>
+                            <div class="cart-list-wrap">
+                                <a href="{% url 'cart' %}"><i class="fal fa-shopping-cart"></i></a>
+                                <div class="cart-list-content-wrap">
+                                    <div class="cart-list-content">
+                                        <ul class="cart-items-list">
+                                            <li>
+                                                <a href="{% url 'single_product' %}">
+                                                    <img src="{% static 'images/item1.png' %}" alt="">
+                                                    <div class="cart-item-detail">
+                                                        <h6>T-Shirt </h6>
+                                                        <p>1 x $250</p>
+                                                    </div>
+                                                    <button type="button" class="close-btn"><img
+                                                            src="{% static 'images/close-black-icon.svg' %} alt=""></button>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="{% url 'single_product' %}">
+                                                    <img src="{% static 'images/item1.png' %}" alt="">
+                                                    <div class="cart-item-detail">
+                                                        <h6>T-Shirt </h6>
+                                                        <p>1 x $250</p>
+                                                    </div>
+                                                    <button type="button" class="close-btn"><img
+                                                            src="{% static 'images/close-black-icon.svg' %} alt=""></button>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="{% url 'single_product' %}">
+                                                    <img src="{% static 'images/item1.png' %}" alt="">
+                                                    <div class="cart-item-detail">
+                                                        <h6>T-Shirt </h6>
+                                                        <p>1 x $250</p>
+                                                    </div>
+                                                    <button type="button" class="close-btn"><img
+                                                            src="{% static 'images/close-black-icon.svg' %} alt=""></button>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <button type="button" class="general-btn">checkbox</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="profile-wrap">
+                                <a href="#"><i class="fal fa-user"></i></a>
+                                <div class="profile-content-wrap">
+                                    <ul class="profile-content">
+                                        <li><a href="#">Welcome, Soulmate</a></li>
+                                        <li><a href="{% url 'order_history' %}">Order History</a></li>
+                                        <li><a href="#">Log Out</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        {% block body %}
+        {% endblock %}
+        <!-- Contant End -->
+        <footer>
+            <div class="footer-main-wrap">
+                <div class="container">
+                    <div class="row footer-main-row">
+                        <div class="footer-logo-wrap">
+                            <a href="#" class="footer-logo">
+                                <img src="{% static 'images/soulful_logo.png' %}" alt="">
+                            </a>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium, totam rem aperiam, eaque a</p>
+                            <ul class="social-link-wrap">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-link-wrap">
+                            <ul class="footer-link">
+                                <li>
+                                    <h6>Shopping online</h6>
+                                    <ul>
+                                        <li><a href="#">Order Status</a></li>
+                                        <li><a href="#">Shipping and Delivery</a></li>
+                                        <li><a href="#">Returns</a></li>
+                                        <li><a href="#">Payment Options</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h6>Information</h6>
+                                    <ul>
+                                        <li><a href="#">Gift Cards</a></li>
+                                        <li><a href="#">Find a store</a></li>
+                                        <li><a href="#">Newsletter</a></li>
+                                        <li><a href="#">Bacome a member</a></li>
+                                        <li><a href="#">Site feedback</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h6>Contact</h6>
+                                    <ul>
+                                        <li><a href="#">abc@mail.com</a></li>
+                                        <li>Hotline: <a href="#">+0 000 000 000</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-wrap">
+                <div class="container">
+                    <div class="copyright-content">
+                        <p>copyright © 2021. <span>ALL RIGHTS RESERVED.</span></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/slick.min.js' %}"></script>
+    <script src="{% static 'js/jquery-ui.min.js' %}"></script>
+    <script src="{% static 'js/pgwslider.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+
+</body>
+
+</html>

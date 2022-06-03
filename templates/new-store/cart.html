@@ -1,0 +1,116 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% block title %}
+<title>Cart</title>
+{% endblock %}
+{% block shipment %}
+        <!-- Header Start -->
+        <div class="free-shipment-wrap">
+            <div class="container">
+                <div class="free-shipment-content">
+                    <p>Free shipment from $200</p>
+                    <p>FREE 30 DAY RETURNS ON YOUR ORDERS</p>
+                </div>
+            </div>
+        </div>
+        <!-- Header Start -->
+{% endblock %}
+{% block body %}
+<div class="content">
+    <section class="breadcrumb-wrap">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#"><i class="fal fa-home-lg"></i></a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Cart</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+    <section class="shopping-cart-warp">
+        <div class="container">
+            <div class="shopping-cart">
+                <h6>Shopping Cart</h6>
+                <ul>
+                    <li><i class="fal fa-shopping-cart"></i></li>
+                    <li><i class="fal fa-truck fa-flip-horizontal"></i></li>
+                </ul>
+            </div>
+            <div class="shopping-cart-table">
+                <table class="table">
+                    <tr>
+                        <th>Product</th>
+                        <th>Color</th>
+                        <th>Size</th>
+                        <th>QTY</th>
+                        <th>Price</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="product-name-wrap">
+                                <img src="{% static 'images/product-3.png' %}" alt="">
+                                <div class="product-name">
+                                    <h6>T-Shirt Summer Vibes</h6>
+                                    <p>#261311</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td title="Amount">White</td>
+                        <td title="Size">XL</td>
+                        <td title="QTY" class="cart-quantity-wrap">
+                            <div class="cart-quantity">
+                                <input type="button" value="-" class="button-minus" data-field="quantity">
+                                <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field"
+                                    readonly>
+                                <input type="button" value="+" class="button-plus" data-field="quantity">
+                            </div>
+                        </td>
+                        <td title="Price" class="fw-b">$89.99</td>
+                        <td><button type="button" class="delete-btn"><img src="{% static 'images/cancel-icon.png' %}"
+                                    alt=""></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="product-name-wrap">
+                                <img src="{% static 'images/product-4.png' %}" alt="">
+                                <div class="product-name">
+                                    <h6>Basic Slim Fit T-Shirt</h6>
+                                    <p>#212315</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td title="Amount">Black</td>
+                        <td title="Size">XL</td>
+                        <td title="QTY" class="cart-quantity-wrap">
+                            <div class="cart-quantity">
+                                <input type="button" value="-" class="button-minus" data-field="quantity">
+                                <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field"
+                                    readonly>
+                                <input type="button" value="+" class="button-plus" data-field="quantity">
+                            </div>
+                        </td>
+                        <td title="Price" class="fw-b">$69,99</td>
+                        <td><button type="button" class="delete-btn"><img src="{% static 'images/cancel-icon.png' %}"
+                                    alt=""></button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="checkout-wrap">
+                <a href="javascript:void(0)" class="arrow-link back-link"><i class="far fa-arrow-left"></i> Continue
+                    Shopping</a>
+                <div class="checkout-content">
+                    <p>Please review your shopping cart items before proceeding with the order payment.</p>
+                    <ul>
+                        <li>Total cost</li>
+                        <li class="total-cost">$159,98</li>
+                    </ul>
+                    <a href="#" class="general-btn">CHECKOUT</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}

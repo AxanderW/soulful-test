@@ -1,0 +1,257 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% block title %}
+<title>Cart</title>
+{% endblock %}
+{% block shipment %}
+<div class="free-shipment-wrap">
+    <div class="container">
+        <div class="free-shipment-content">
+            <p>Free shipment from $200</p>
+            <p>FREE 30 DAY RETURNS ON YOUR ORDERS</p>
+        </div>
+    </div>
+</div>
+{%endblock %}
+{% block body %}
+<div class="content">
+    <section class="breadcrumb-wrap">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#"><i class="fal fa-home-lg"></i></a></li>
+                    <li class="breadcrumb-item"><a href="#">Jewelry</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Bracelets</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+    <section class="signal-product-wrap">
+        <div class="container">
+            <div class="delivery-row">
+                <ul class="delivery-wrap">
+                    <li>
+                        <img src="images/noun_delivery.png" alt="">
+                        <div class="delivery-content">
+                            <h6>Standard shipment</h6>
+                            <p>Free within 3-6 business days</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/noun_fast_delivery.png" alt="">
+                        <div class="delivery-content">
+                            <h6>Express delivery</h6>
+                            <p>$35,00 available</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="product-img-slider-wrap">
+                        <ul class="pgwSlider">
+                            <li><img src="images/pexels-pixabay.png" alt="" /></li>
+                            <li><img src="images/pexels-pixabay.png" alt="" /></li>
+                            <li><img src="images/pexels-pixabay.png" alt="" /></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="product-detail-wrap">
+                        <div class="sale-wrap">
+                            <span>sale</span>
+                            <p>Product ID:<br>
+                                261311</p>
+                        </div>
+                        <h3>Bracelet</h3>
+                        <div class="product-p">
+                            <ul>
+                                <li class="product-new-p">
+                                    <h3>$89.99</h3>
+                                </li>
+                                <li class="product-old-p">
+                                    <h3>$119.99</h3>
+                                </li>
+                            </ul>
+                            <p>HOUSE MY BRAND</p>
+                        </div>
+                        <div class="product-clr-info">
+                            <p>Color:</p>
+                            <ul class="select-clr">
+                                <li class="black-clr"><span></span></li>
+                                <li class="skin-clr"><span></span></li>
+                                <li class="dark-blue-clr"><span></span></li>
+                                <li class="white-clr"><span></span></li>
+                            </ul>
+                        </div>
+                        <div class="product-size-info">
+                            <p>Size: <span>See size table</span></p>
+                            <label class="select-wrap">
+                                <select name="" id="">
+                                    <option value="">Choose siZE</option>
+                                    <option value="">Color1</option>
+                                    <option value="">Color2</option>
+                                    <option value="">Color3</option>
+                                    <option value="">Color4</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="product-quantity-info">
+                            <p>Quantity:</p>
+                            <div class="product-quantity">
+                                <div class="cart-quantity">
+                                    <input type="button" value="-" class="button-minus" data-field="quantity">
+                                    <input type="number" step="1" max="" value="1" name="quantity"
+                                        class="quantity-field" readonly="">
+                                    <input type="button" value="+" class="button-plus" data-field="quantity">
+                                </div>
+                                <a href="#" class="general-btn">Add to cart</a>
+                                <button type="button" class="favr-product">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="desp-review-wrap">
+        <div class="container">
+            <ul class="desp-review-tab">
+                <li class="active"><a href="#">Description</a></li>
+                <li><a href="#">Reviews (2)</a></li>
+            </ul>
+            <div class="desp-review-content">
+                <div class="row desp-review-row">
+                    <div class="col-lg-7 desp-review-col">
+                        <div class="product-desp-content">
+                            <img src="images/noun_description.png" class="product-desp-img" alt="">
+                            <h6>Details and product description</h6>
+                            <p>White Summer Vibes T-shirt in the uiKit line with a colorful print.</p>
+                            <p>Made of jersey cotton. T-shirt fits perfectly with jeans, pants or shorts.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 desp-review-col">
+                        <div class="product-desp-content">
+                            <img src="images/outline-icon.png" class="product-desp-img" alt="">
+                            <h6>Material(s) and care</h6>
+                            <p>Body: 98% COTTON - 2% ELASTANE</p>
+                            <img src="images/product-icon.png" class="p-clean-icon" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="recommended-product just-selected">
+        <div class="container">
+            <div class="more-recommended-product">
+                <h3>Selected just for you</h3>
+                <a href="#" class="general-btn white-btn">Show more</a>
+            </div>
+            <div class="best-product-slider recommended-slider">
+                <div class="best-product-slide">
+                    <div class="best-seller-img">
+                        <span>30%</span>
+                        <img src="images/product-5.png" alt="">
+                        <div class="add-to-cart-btn">
+                            <a href="#" class="general-btn">Add to cart</a>
+                        </div>
+                    </div>
+                    <p>Jewelry</p>
+                    <ul class="new-price">
+                        <li class="new-p">$89.99</li>
+                        <li class="old-p">$119.99</li>
+                    </ul>
+                </div>
+                <div class="best-product-slide">
+                    <div class="best-seller-img">
+                        <img src="images/product-6.png" alt="">
+                        <div class="add-to-cart-btn">
+                            <a href="#" class="general-btn">Add to cart</a>
+                        </div>
+                    </div>
+                    <p>Jewelry</p>
+                    <ul>
+                        <li>$119.99</li>
+                    </ul>
+                </div>
+                <div class="best-product-slide">
+                    <div class="best-seller-img">
+                        <img src="images/product-7.png" alt="">
+                        <div class="add-to-cart-btn">
+                            <a href="#" class="general-btn">Add to cart</a>
+                        </div>
+                    </div>
+                    <p>Jewelry</p>
+                    <ul>
+                        <li>$79.99</li>
+                    </ul>
+                </div>
+                <div class="best-product-slide">
+                    <div class="best-seller-img">
+                        <img src="images/product-5.png" alt="">
+                        <div class="add-to-cart-btn">
+                            <a href="#" class="general-btn">Add to cart</a>
+                        </div>
+                    </div>
+                    <p>Jewelry</p>
+                    <ul>
+                        <li>$119.99</li>
+                    </ul>
+                </div>
+                <div class="best-product-slide">
+                    <div class="best-seller-img">
+                        <img src="images/product-6.png" alt="">
+                        <div class="add-to-cart-btn">
+                            <a href="#" class="general-btn">Add to cart</a>
+                        </div>
+                    </div>
+                    <p>Jewelry</p>
+                    <ul class="new-price">
+                        <li class="new-p">$89.99</li>
+                        <li class="old-p">$119.99</li>
+                    </ul>
+                </div>
+                <div class="best-product-slide">
+                    <div class="best-seller-img">
+                        <img src="images/product-7.png" alt="">
+                        <div class="add-to-cart-btn">
+                            <a href="#" class="general-btn">Add to cart</a>
+                        </div>
+                    </div>
+                    <p>Jewelry</p>
+                    <ul>
+                        <li>$119.99</li>
+                    </ul>
+                </div>
+                <div class="best-product-slide">
+                    <div class="best-seller-img">
+                        <img src="images/product-5.png" alt="">
+                        <div class="add-to-cart-btn">
+                            <a href="#" class="general-btn">Add to cart</a>
+                        </div>
+                    </div>
+                    <p>Jewelry</p>
+                    <ul>
+                        <li>$79.99</li>
+                    </ul>
+                </div>
+                <div class="best-product-slide">
+                    <div class="best-seller-img">
+                        <img src="images/product-6.png" alt="">
+                        <div class="add-to-cart-btn">
+                            <a href="#" class="general-btn">Add to cart</a>
+                        </div>
+                    </div>
+                    <p>Jewelry</p>
+                    <ul>
+                        <li>$119.99</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}

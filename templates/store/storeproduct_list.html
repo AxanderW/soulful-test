@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Product List</title>
+</head>
+<body>
+    {% for store_product in object_list %}
+       <a href="{% url 'store-product-detail' store_product.pk %}"><img src="{{ store_product.product.image.url }}" alt=""></a> 
+        <a href="{% url 'store-product-detail' store_product.pk %}"><h1>{{ store_product.product.name }}</h1></a>
+        <h3>{{ store_product.price }}</h3>
+        <p>{{ store_product.product.description }}</p>
+    {% empty %}
+        <h5>No products yet...</h5>
+    {% endfor %}
+</body>
+</html>

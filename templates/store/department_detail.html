@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department Detail</title>
+</head>
+<body>
+    <div>
+        <div>
+            <p><a href="{% url 'home' %}">Home | </a> <a href="{% url 'department-list' %}">Department |</a> {{ department.name }}</p>
+        </div>
+        <img src="{{ department.image.url }}" alt="">
+        <div id='department-categories'>
+            <h1>Categories</h1>
+            {% for cat in categories %}
+                <a href="{% url 'category-detail' cat.slug %}"><h2>{{ cat.name }}</h2></a> 
+                <a href="{% url 'category-detail' cat.slug %}"><img src="{{ cat.image.url }}" alt=""></a>
+            {% empty %}
+                <h2>No categories yet....</h2>
+            {% endfor %}
+        </div>
+        <div id='department-products'>
+            <h1>Products</h1>
+            {% for product in store_products %}
+            <h2>{{ product.product.name }}</h2>
+            <a href="{% url 'store-product-detail' product.pk %}"><img src="{{ product.product.image.url }}" alt=""></a>
+            <h4>$ {{ product.price }}</h4>
+            {% empty %}
+                <h3>No products yet...</h3>
+            {% endfor %}
+    
+        </div>
+    </div>
+
+</body>
+</html>

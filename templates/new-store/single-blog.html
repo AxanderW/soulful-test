@@ -1,0 +1,259 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% block title %}
+<title>BLog</title>
+{% endblock %}
+{% block body %}
+        <!-- Header Start -->
+
+        <!-- Contant Start -->
+        <div class="content">
+            <section class="breadcrumb-wrap">
+                <div class="container">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="#"><i class="fal fa-home-lg"></i></a></li>
+                          <li class="breadcrumb-item"><a href="#">Blogs</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">Blog Post</li>
+                        </ol>
+                    </nav>
+                </div>
+            </section>
+            <section class="single-blog-wrap">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="single-blog-img-wrap">
+                                <div class="single-blog-img">
+                                    <img src="{% static 'images/single-blog-img.png' %}" alt="">
+                                </div>
+                                <ul>
+                                    <li><a href="javascript:void(0)"><i class="far fa-heart"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="far fa-share-alt"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="fas fa-bookmark"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="single-blog-content">
+                                <div class="blog-person-info-wrap">
+                                    <div class="blog-person-info">
+                                        <img src="{% static 'images/vIqzOHXj.png' %}" alt="">
+                                        <h4>Name</h4>
+                                    </div>
+                                    <span>00/00/0000</span>
+                                </div>
+                                <h3>Blog title</h3>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quiaSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quiaSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="all-blog-wrap more-blog-wrap">
+                <div class="container">
+                    <h3>Related Blogs</h3>
+                    <div class="row blog-row">
+                        <div class="col-sm-6 col-lg-4 blog-col">
+                            <div class="blog-content-wrap">
+                                <div class="blog-person-info">
+                                    <img src="{% static 'images/vIqzOHXj.png' %}" alt="">
+                                    <p>Name</p>
+                                </div>
+                                <div class="blog-content">
+                                    <img src="{% static 'images/pexels-bruno-salvadori-1755428.png' %}" alt="">
+                                    <h5>Blog title</h5>
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa</p>
+                                </div>
+                                <div class="blog-link-wrap">
+                                    <ul>
+                                        <li><a href="javascript:void(0)"><i class="fal fa-heart"></i></a></li>
+                                        <li><a href="javascript:void(0)"><i class="fal fa-share-alt"></i></a></li>
+                                        <li><a href="javascript:void(0)"><i class="fal fa-bookmark"></i></a></li>
+                                    </ul>
+                                    <a href="javascript:void(0)" class="arrow-link purple-clr">READ MORE <i class="far fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 blog-col">
+                            <div class="blog-content-wrap">
+                                <div class="blog-person-info">
+                                    <img src="{% static 'images/vIqzOHXj.png' %}" alt="">
+                                    <p>Name</p>
+                                </div>
+                                <div class="blog-content">
+                                    <img src="{% static 'images/pexels-pixabay-247287.png' %}" alt="">
+                                    <h5>Blog title</h5>
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa</p>
+                                </div>
+                                <div class="blog-link-wrap">
+                                    <ul>
+                                        <li><a href="javascript:void(0)"><i class="fal fa-heart"></i></a></li>
+                                        <li><a href="javascript:void(0)"><i class="fal fa-share-alt"></i></a></li>
+                                        <li><a href="javascript:void(0)"><i class="fal fa-bookmark"></i></a></li>
+                                    </ul>
+                                    <a href="javascript:void(0)" class="arrow-link purple-clr">READ MORE <i class="far fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 blog-col">
+                            <div class="blog-content-wrap">
+                                <div class="blog-person-info">
+                                    <img src="{% static 'images/vIqzOHXj.png' %}" alt="">
+                                    <p>Name</p>
+                                </div>
+                                <div class="blog-content">
+                                    <img src="{% static 'images/pexels-moose-photos-1037914.png' %}" alt="">
+                                    <h5>Blog title</h5>
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa</p>
+                                </div>
+                                <div class="blog-link-wrap">
+                                    <ul>
+                                        <li><a href="javascript:void(0)"><i class="fal fa-heart"></i></a></li>
+                                        <li><a href="javascript:void(0)"><i class="fal fa-share-alt"></i></a></li>
+                                        <li><a href="javascript:void(0)"><i class="fal fa-bookmark"></i></a></li>
+                                    </ul>
+                                    <a href="javascript:void(0)" class="arrow-link purple-clr">READ MORE <i class="far fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 blog-col">
+                            <div class="blog-content-wrap">
+                                <div class="blog-person-info">
+                                    <img src="{% static 'images/vIqzOHXj.png' %}" alt="">
+                                    <p>Name</p>
+                                </div>
+                                <div class="blog-content">
+                                    <img src="{% static 'images/pexels-bruno-salvadori-1755428.png' %}" alt="">
+                                    <h5>Blog title</h5>
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa</p>
+                                </div>
+                                <div class="blog-link-wrap">
+                                    <ul>
+                                        <li><a href="javascript:void(0)"><i class="fal fa-heart"></i></a></li>
+                                        <li><a href="javascript:void(0)"><i class="fal fa-share-alt"></i></a></li>
+                                        <li><a href="javascript:void(0)"><i class="fal fa-bookmark"></i></a></li>
+                                    </ul>
+                                    <a href="javascript:void(0)" class="arrow-link purple-clr">READ MORE <i class="far fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 blog-col">
+                            <div class="blog-content-wrap">
+                                <div class="blog-person-info">
+                                    <img src="{% static 'images/vIqzOHXj.png' %}" alt="">
+                                    <p>Name</p>
+                                </div>
+                                <div class="blog-content">
+                                    <img src="{% static 'images/pexels-pixabay-247287.png' %}" alt="">
+                                    <h5>Blog title</h5>
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa</p>
+                                </div>
+                                <div class="blog-link-wrap">
+                                    <ul>
+                                        <li><a href="javascript:void(0)"><i class="fal fa-heart"></i></a></li>
+                                        <li><a href="javascript:void(0)"><i class="fal fa-share-alt"></i></a></li>
+                                        <li><a href="javascript:void(0)"><i class="fal fa-bookmark"></i></a></li>
+                                    </ul>
+                                    <a href="javascript:void(0)" class="arrow-link purple-clr">READ MORE <i class="far fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 blog-col">
+                            <div class="blog-content-wrap">
+                                <div class="blog-person-info">
+                                    <img src="{% static 'images/vIqzOHXj.png' %}" alt="">
+                                    <p>Name</p>
+                                </div>
+                                <div class="blog-content">
+                                    <img src="{% static 'images/pexels-moose-photos-1037914.png' %}" alt="">
+                                    <h5>Blog title</h5>
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa</p>
+                                </div>
+                                <div class="blog-link-wrap">
+                                    <ul>
+                                        <li><a href="javascript:void(0)"><i class="fal fa-heart"></i></a></li>
+                                        <li><a href="javascript:void(0)"><i class="fal fa-share-alt"></i></a></li>
+                                        <li><a href="javascript:void(0)"><i class="fal fa-bookmark"></i></a></li>
+                                    </ul>
+                                    <a href="javascript:void(0)" class="arrow-link purple-clr">READ MORE <i class="far fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 blog-col">
+                            <div class="blog-content-wrap">
+                                <div class="blog-person-info">
+                                    <img src="{% static 'images/vIqzOHXj.png' %}" alt="">
+                                    <p>Name</p>
+                                </div>
+                                <div class="blog-content">
+                                    <img src="{% static 'images/pexels-bruno-salvadori-1755428.png' %}" alt="">
+                                    <h5>Blog title</h5>
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa</p>
+                                </div>
+                                <div class="blog-link-wrap">
+                                    <ul>
+                                        <li><a href="javascript:void(0)"><i class="fal fa-heart"></i></a></li>
+                                        <li><a href="javascript:void(0)"><i class="fal fa-share-alt"></i></a></li>
+                                        <li><a href="javascript:void(0)"><i class="fal fa-bookmark"></i></a></li>
+                                    </ul>
+                                    <a href="javascript:void(0)" class="arrow-link purple-clr">READ MORE <i class="far fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 blog-col">
+                            <div class="blog-content-wrap">
+                                <div class="blog-person-info">
+                                    <img src="{% static 'images/vIqzOHXj.png' %}" alt="">
+                                    <p>Name</p>
+                                </div>
+                                <div class="blog-content">
+                                    <img src="{% static 'images/pexels-pixabay-247287.png' %}" alt="">
+                                    <h5>Blog title</h5>
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa</p>
+                                </div>
+                                <div class="blog-link-wrap">
+                                    <ul>
+                                        <li><a href="javascript:void(0)"><i class="fal fa-heart"></i></a></li>
+                                        <li><a href="javascript:void(0)"><i class="fal fa-share-alt"></i></a></li>
+                                        <li><a href="javascript:void(0)"><i class="fal fa-bookmark"></i></a></li>
+                                    </ul>
+                                    <a href="javascript:void(0)" class="arrow-link purple-clr">READ MORE <i class="far fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 blog-col">
+                            <div class="blog-content-wrap">
+                                <div class="blog-person-info">
+                                    <img src="{% static 'images/vIqzOHXj.png' %}" alt="">
+                                    <p>Name</p>
+                                </div>
+                                <div class="blog-content">
+                                    <img src="{% static 'images/pexels-moose-photos-1037914.png' %}" alt="">
+                                    <h5>Blog title</h5>
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa</p>
+                                </div>
+                                <div class="blog-link-wrap">
+                                    <ul>
+                                        <li><a href="javascript:void(0)"><i class="fal fa-heart"></i></a></li>
+                                        <li><a href="javascript:void(0)"><i class="fal fa-share-alt"></i></a></li>
+                                        <li><a href="javascript:void(0)"><i class="fal fa-bookmark"></i></a></li>
+                                    </ul>
+                                    <a href="javascript:void(0)" class="arrow-link purple-clr">READ MORE <i class="far fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="custom-navigation">
+                        <span>Page</span>
+                        <ul class="pagination">
+                          <li class="page-item active"><a class="page-link" href="javascript:void(0);">1</a></li>
+                          <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+                          <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
+                          <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+        </div>
+{% endblog %}

@@ -1,0 +1,355 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% block title %}
+<title>Home</title>
+{% endblock %}
+{% block body %}
+        <!-- hero Start -->
+        <div class="hero">
+            <div id="carouselExampleControls" class="carousel slide hero-slider" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="{% static 'images/pexels-jaysen-scott-1858488.png' %}" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'images/pexels-jaysen-scott-1858488.png' %}" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'images/pexels-jaysen-scott-1858488.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="carousel-control-wrap">
+                    <div class="carousel-control-content">
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <i class="far fa-arrow-left"></i>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <i class="far fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-content-wrap">
+                <div class="container">
+                    <div class="hero-range-slider-wrap">
+                        <div class="hero-range-slider">
+                            <span>01</span>
+                            <div class="slidecontainer">
+                                <input type="range" min="1" max="5" value="50" class="slider" id="myRange">
+                              </div>
+                            <span>05</span>
+                        </div>
+                        <div class="hero-content">
+                            <h1>Lorem Ipsum Dolor Sitamet</h1>
+                            <a href="#"><div class="shop-now-btn"><img src="{% static 'images/arrow-left-icon.svg' %}" alt=""></div> Shop now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-btm-wrap">
+                <div class="hero-btm-content-wrap">
+                    <div class="hero-btm-img">
+                        <img src="{% static 'images/shipping-icon-s.svg' %}" alt="">
+                    </div>
+                    <div class="hero-btm-content">
+                        <h6>Free Shipping</h6>
+                        <p>On purchases over $199</p>
+                    </div>
+                </div>
+                <div class="hero-btm-content-wrap">
+                    <div class="hero-btm-img">
+                        <img src="{% static 'images/happy-icon-s.svg' %}" alt="">
+                    </div>
+                    <div class="hero-btm-content">
+                        <h6>99% Satisfied Customers</h6>
+                        <p>Our clients' opinions 
+                            speak for themselves</p>
+                    </div>
+                </div>
+                <div class="hero-btm-content-wrap">
+                    <div class="hero-btm-img">
+                        <img src="{% static 'images/guarantee-icon-s.svg' %}" alt="">
+                    </div>
+                    <div class="hero-btm-content">
+                        <h6>Originality Guaranteed</h6>
+                        <p>30 days warranty for each 
+                            product from our store</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- hero End -->
+
+        <!-- Contant Start -->
+        <div class="content">
+            <section class="best-seller-product-wrap">
+                <div class="container">
+                    <div class="seller-product-list">
+                        <ul>
+                            <li class="active"><a href="#" class="#">What's New</a></li>
+                            <li><a href="#" class="#">Best Seller</a></li>
+                            <li><a href="#" class="#">Manifestation</a></li>
+                            <li><a href="#" class="#">Attraction</a></li>
+                            <li><a href="#" class="#">Departments</a></li>
+                            <li><a href="#" class="#">Sale</a></li>
+                        </ul>
+                        <a href="#" class="general-btn">Show more</a>
+                    </div>
+                    <div class="best-product-slider">
+                        <div class="best-product-slide">
+                            <div class="best-seller-img">
+                                <span>30%</span>
+                                <img src="{% static 'images/adobeStock_236655481.png' %}" alt="">
+                            </div>
+                            <p>T-Shirt Summer Vibes</p>
+                            <ul class="new-price">
+                                <li class="new-p">$89.99</li>
+                                <li class="old-p">$119.99</li>
+                            </ul>
+                        </div>
+                        <div class="best-product-slide">
+                            <div class="best-seller-img">
+                                <img src="{% static 'images/adobeStock_118120200.png' %}" alt="">
+                            </div>
+                            <p>Loose Knit 3/4 Sleeve</p>
+                            <ul>
+                                <li>$119.99</li>
+                            </ul>
+                        </div>
+                        <div class="best-product-slide">
+                            <div class="best-seller-img">
+                                <img src="{% static 'images/adobeStock_136908398.png' %}" alt="">
+                            </div>
+                            <p>Basic Slim Fit T-Shirt</p>
+                            <ul>
+                                <li>$79.99</li>
+                            </ul>
+                        </div>
+                        <div class="best-product-slide">
+                            <div class="best-seller-img">
+                                <img src="{% static 'images/adobeStock_173519034.png' %}" alt="">
+                            </div>
+                            <p>Loose Textured T-Shirt</p>
+                            <ul>
+                                <li>$119.99</li>
+                            </ul>
+                        </div>
+                        <div class="best-product-slide">
+                            <div class="best-seller-img">
+                                <img src="{% static 'images/adobeStock_236655481.png' %}" alt="">
+                            </div>
+                            <p>T-Shirt Summer Vibes</p>
+                            <ul class="new-price">
+                                <li class="new-p">$89.99</li>
+                                <li class="old-p">$119.99</li>
+                            </ul>
+                        </div>
+                        <div class="best-product-slide">
+                            <div class="best-seller-img">
+                                <img src="{% static 'images/adobeStock_118120200.png' %}" alt="">
+                            </div>
+                            <p>Loose Knit 3/4 Sleeve</p>
+                            <ul>
+                                <li>$119.99</li>
+                            </ul>
+                        </div>
+                        <div class="best-product-slide">
+                            <div class="best-seller-img">
+                                <img src="{% static 'images/adobeStock_136908398.png' %}" alt="">
+                            </div>
+                            <p>Basic Slim Fit T-Shirt</p>
+                            <ul>
+                                <li>$79.99</li>
+                            </ul>
+                        </div>
+                        <div class="best-product-slide">
+                            <div class="best-seller-img">
+                                <img src="{% static 'images/adobeStock_173519034.png' %}" alt="">
+                            </div>
+                            <p>Loose Textured T-Shirt</p>
+                            <ul>
+                                <li>$119.99</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="choose-us-warp">
+                <div class="container">
+                    <h3>Why should you choose us?</h3>
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="choose-us-content">
+                                <div class="choose-us-img">
+                                    <img src="{% static 'images/shipping-icon-m.svg' %}" alt="">
+                                </div>
+                                <h6>Free Shipping</h6>
+                                <p>All purchases over $199 are eligible for
+                                    free shipping via USPS First Class Mail.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="choose-us-content choose-us-active">
+                                <div class="choose-us-img">
+                                    <img src="{% static 'images/payment-icon-m.svg' %}" alt="">
+                                </div>
+                                <h6>Easy Payments</h6>
+                                <p>All payments are processed instantly
+                                    over a secure payment protocol.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="choose-us-content">
+                                <div class="choose-us-img">
+                                    <img src="{% static 'images/guarantee-icon-m.svg' %}" alt="">
+                                </div>
+                                <h6>Money-Back Guarantee</h6>
+                                <p>If an item arrived damaged or you've
+                                    changed your mind, you can send it
+                                    back for a full refund.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="choose-us-content">
+                                <div class="choose-us-img">
+                                    <img src="{% static 'images/materials-icon-m.svg' %}" alt="">
+                                </div>
+                                <h6>Finest Quality</h6>
+                                <p>Designed to last, each of our products has
+                                    been crafted with the finest materials.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="featured-items-wrap">
+                <div class="container">
+                    <div class="featured-items-content-wrap">
+                        <h3>Featured Items</h3>
+                        <h4>Basic Slim Fit T-Shirt</h4>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="feat-items-img-slider-wrap">
+                                    <div class="feat-items-img-slider">
+                                        <div class="feat-items-img">
+                                            <img src="{% static 'images/feat-items-img.png' %}" alt="">
+                                        </div>
+                                        <div class="feat-items-img">
+                                            <img src="{% static 'images/feat-items-img.png' %}" alt="">
+                                        </div>
+                                        <div class="feat-items-img">
+                                            <img src="{% static 'images/feat-items-img.png' %}" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="feat-items-img-content">
+                                        <h4>$79.99</h4>
+                                        <a href="#" class="general-btn">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="featured-items-content">
+                                    <ul>
+                                        <li>
+                                            <h4>Description</h4>
+                                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia</p>
+                                        </li>
+                                        <li>
+                                            <h4>Healing Properties</h4>
+                                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia</p>
+                                        </li>
+                                    </ul>
+                                    <a href="javascript:void(0)" class="arrow-link purple-clr">Browse All Products <i class="far fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="latest-blog-wrap">
+                <div class="container">
+                    <div class="latest-blog-heading">
+                        <h3>Latest Blog</h3>
+                        <a href="javascript:void(0)" class="arrow-link">View All <i class="far fa-arrow-right"></i></a>
+                    </div>
+                    <div class="row blog-row justify-content-center">
+                        <div class="col-md-6 col-lg-4 blog-col">
+                            <div class="blog-content-wrap">
+                                <div class="blog-person-info">
+                                    <img src="{% static 'images/vIqzOHXj.png' %}" alt="">
+                                    <p>Name</p>
+                                </div>
+                                <div class="blog-content">
+                                    <img src="{% static 'images/pexels-bruno-salvadori-1755428.png' %}" alt="">
+                                    <h5>Blog title</h5>
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa</p>
+                                </div>
+                                <div class="blog-link-wrap">
+                                    <ul>
+                                        <li><a href="javascript:void(0)"><i class="fal fa-heart"></i></a></li>
+                                        <li><a href="javascript:void(0)"><i class="fal fa-share-alt"></i></a></li>
+                                        <li><a href="javascript:void(0)"><i class="fal fa-bookmark"></i></a></li>
+                                    </ul>
+                                    <a href="javascript:void(0)" class="arrow-link purple-clr">READ MORE <i class="far fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 blog-col">
+                            <div class="blog-content-wrap">
+                                <div class="blog-person-info">
+                                    <img src="{% static 'images/vIqzOHXj.png' %}" alt="">
+                                    <p>Name</p>
+                                </div>
+                                <div class="blog-content">
+                                    <img src="{% static 'images/pexels-pixabay-247287.png' %}" alt="">
+                                    <h5>Blog title</h5>
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa</p>
+                                </div>
+                                <div class="blog-link-wrap">
+                                    <ul>
+                                        <li><a href="javascript:void(0)"><i class="fal fa-heart"></i></a></li>
+                                        <li><a href="javascript:void(0)"><i class="fal fa-share-alt"></i></a></li>
+                                        <li><a href="javascript:void(0)"><i class="fal fa-bookmark"></i></a></li>
+                                    </ul>
+                                    <a href="javascript:void(0)" class="arrow-link purple-clr">READ MORE <i class="far fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 blog-col">
+                            <div class="blog-content-wrap">
+                                <div class="blog-person-info">
+                                    <img src="{% static 'images/vIqzOHXj.png' %}" alt="">
+                                    <p>Name</p>
+                                </div>
+                                <div class="blog-content">
+                                    <img src="{% static 'images/pexels-moose-photos-1037914.png' %}" alt="">
+                                    <h5>Blog title</h5>
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa</p>
+                                </div>
+                                <div class="blog-link-wrap">
+                                    <ul>
+                                        <li><a href="javascript:void(0)"><i class="fal fa-heart"></i></a></li>
+                                        <li><a href="javascript:void(0)"><i class="fal fa-share-alt"></i></a></li>
+                                        <li><a href="javascript:void(0)"><i class="fal fa-bookmark"></i></a></li>
+                                    </ul>
+                                    <a href="javascript:void(0)" class="arrow-link purple-clr">READ MORE <i class="far fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="newsletter-wrap">
+                <div class="container">
+                    <div class="newsletter-content">
+                        <h4>Subscribe to our newsletter and
+                            receive exclusive offers every week</h4>
+                        <form action="">
+                            <input type="text" placeholder="Enter your email">
+                            <button type="button" class="general-btn">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+{% endblock %}

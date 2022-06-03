@@ -1,0 +1,284 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% block title %}
+<title>Department</title>
+{% endblock %}
+{% block body %}
+        <div class="content">
+            <section class="breadcrumb-wrap">
+                <div class="container">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="#"><i class="fal fa-home-lg"></i></a></li>
+                          <li class="breadcrumb-item active" aria-current="page">All products</li>
+                        </ol>
+                    </nav>
+                </div>
+            </section>
+            <section class="banner single-department-banner">
+                <div class="container">
+                    <div class="banner-content">
+                        <div class="banner-content-inner">
+                            <h1>For Graceful You</h1>
+                            <h5>Silver bracelet</h5>
+                            <a href="#" class="general-btn">view collection</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="all-product-wrap single-department-wrap">
+                <div class="container">
+                    <div class="all-product-row">
+                        <div class="all-product-content">
+                            <div class="sort-wrap">
+                                <h4>Bracelets <span>(133)</span></h4>
+                                <ul>
+                                    <li>
+                                        <p>Show products:</p>
+                                        <label for="" class="show-product">
+                                            <select name="" id="">
+                                                <option value="">10</option>
+                                                <option value="">20</option>
+                                                <option value="" selected>30</option>
+                                                <option value="">50</option>
+                                                <option value="">100</option>
+                                            </select>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <p>Sort:</p>
+                                        <label for="" class="product-sort">
+                                            <select name="" id="">
+                                                <option value="">popular</option>
+                                                <option value="">popular1</option>
+                                                <option value="">popular2</option>
+                                                <option value="">popular3</option>
+                                                <option value="">popular4</option>
+                                            </select>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="all-product-here">
+                                <div class="best-product-slide-wrap">
+                                    <div class="best-product-slide" style="width: 100%; display: inline-block;">
+                                        <div class="best-seller-img">
+                                            <img src="{% static 'images/product-5.png' %}" alt="">
+                                            <a href="javascript:void(0)" class="favr-product">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                            <div class="add-to-cart-btn">
+                                                <a href="#" class="general-btn">Add to cart</a>
+                                            </div>
+                                        </div>
+                                        <p>Stones</p>
+                                        <ul class="new-price">
+                                            <li class="new-p">$89.99</li>
+                                            <li class="old-p">$119.99</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="best-product-slide-wrap">
+                                    <div class="best-product-slide" style="width: 100%; display: inline-block;">
+                                        <div class="best-seller-img">
+                                            <img src="{% static 'images/product-6.png %}" alt="">
+                                            <a href="javascript:void(0)" class="favr-product">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                            <div class="add-to-cart-btn">
+                                                <a href="#" class="general-btn">Add to cart</a>
+                                            </div>
+                                        </div>
+                                        <p>Stones</p>
+                                        <ul class="new-price">
+                                            <li class="new-p">$89.99</li>
+                                            <li class="old-p">$119.99</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="best-product-slide-wrap">
+                                    <div class="best-product-slide" style="width: 100%; display: inline-block;">
+                                        <div class="best-seller-img">
+                                            <img src="{% static 'images/product-7.png' %}" alt="">
+                                            <a href="javascript:void(0)" class="favr-product my-favr">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                            <div class="add-to-cart-btn">
+                                                <a href="#" class="general-btn">Add to cart</a>
+                                            </div>
+                                        </div>
+                                        <p>Stones</p>
+                                        <ul>
+                                            <li>$119.99</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="best-product-slide-wrap">
+                                    <div class="best-product-slide" style="width: 100%; display: inline-block;">
+                                        <div class="best-seller-img">
+                                            <img src="{% static 'images/product-5.png' %}" alt="">
+                                            <a href="javascript:void(0)" class="favr-product">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                            <div class="add-to-cart-btn">
+                                                <a href="#" class="general-btn">Add to cart</a>
+                                            </div>
+                                        </div>
+                                        <p>Stones</p>
+                                        <ul>
+                                            <li>$79.99</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="best-product-slide-wrap">
+                                    <div class="best-product-slide" style="width: 100%; display: inline-block;">
+                                        <div class="best-seller-img">
+                                            <img src="{% static 'images/product-5.png' %}" alt="">
+                                            <a href="javascript:void(0)" class="favr-product">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                            <div class="add-to-cart-btn">
+                                                <a href="#" class="general-btn">Add to cart</a>
+                                            </div>
+                                        </div>
+                                        <p>Stones</p>
+                                        <ul>
+                                            <li>$79.99</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="best-product-slide-wrap">
+                                    <div class="best-product-slide" style="width: 100%; display: inline-block;">
+                                        <div class="best-seller-img">
+                                            <img src="{% static 'images/product-6.png' %}" alt="">
+                                            <a href="javascript:void(0)" class="favr-product">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                            <div class="add-to-cart-btn">
+                                                <a href="#" class="general-btn">Add to cart</a>
+                                            </div>
+                                        </div>
+                                        <p>Stones</p>
+                                        <ul>
+                                            <li>$79.99</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="best-product-slide-wrap">
+                                    <div class="best-product-slide" style="width: 100%; display: inline-block;">
+                                        <div class="best-seller-img">
+                                            <img src="{% static 'images/product-7.png' %}" alt="">
+                                            <a href="javascript:void(0)" class="favr-product my-favr">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                            <div class="add-to-cart-btn">
+                                                <a href="#" class="general-btn">Add to cart</a>
+                                            </div>
+                                        </div>
+                                        <p>Stones</p>
+                                        <ul>
+                                            <li>$119.99</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="best-product-slide-wrap">
+                                    <div class="best-product-slide" style="width: 100%; display: inline-block;">
+                                        <div class="best-seller-img">
+                                            <img src="{% static 'images/product-6.png' %}" alt="">
+                                            <a href="javascript:void(0)" class="favr-product">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                            <div class="add-to-cart-btn">
+                                                <a href="#" class="general-btn">Add to cart</a>
+                                            </div>
+                                        </div>
+                                        <p>Stones</p>
+                                        <ul>
+                                            <li>$79.99</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="best-product-slide-wrap">
+                                    <div class="best-product-slide" style="width: 100%; display: inline-block;">
+                                        <div class="best-seller-img">
+                                            <img src="{% static 'images/product-5.png' %}" alt="">
+                                            <a href="javascript:void(0)" class="favr-product">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                            <div class="add-to-cart-btn">
+                                                <a href="#" class="general-btn">Add to cart</a>
+                                            </div>
+                                        </div>
+                                        <p>Stones</p>
+                                        <ul>
+                                            <li>$79.99</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="best-product-slide-wrap">
+                                    <div class="best-product-slide" style="width: 100%; display: inline-block;">
+                                        <div class="best-seller-img">
+                                            <img src="{% static 'images/product-6.png' %}" alt="">
+                                            <a href="javascript:void(0)" class="favr-product">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                            <div class="add-to-cart-btn">
+                                                <a href="#" class="general-btn">Add to cart</a>
+                                            </div>
+                                        </div>
+                                        <p>Stones</p>
+                                        <ul>
+                                            <li>$79.99</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="best-product-slide-wrap">
+                                    <div class="best-product-slide" style="width: 100%; display: inline-block;">
+                                        <div class="best-seller-img">
+                                            <img src="{% static 'images/product-7.png' %}" alt="">
+                                            <a href="javascript:void(0)" class="favr-product my-favr">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                            <div class="add-to-cart-btn">
+                                                <a href="#" class="general-btn">Add to cart</a>
+                                            </div>
+                                        </div>
+                                        <p>Stones</p>
+                                        <ul>
+                                            <li>$119.99</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="best-product-slide-wrap">
+                                    <div class="best-product-slide" style="width: 100%; display: inline-block;">
+                                        <div class="best-seller-img">
+                                            <img src="{% static 'images/product-6.png' %}" alt="">
+                                            <a href="javascript:void(0)" class="favr-product">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                            <div class="add-to-cart-btn">
+                                                <a href="#" class="general-btn">Add to cart</a>
+                                            </div>
+                                        </div>
+                                        <p>Stones</p>
+                                        <ul>
+                                            <li>$79.99</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <nav class="custom-navigation">
+                                <span>Page</span>
+                                <ul class="pagination">
+                                  <li class="page-item active"><a class="page-link" href="javascript:void(0);">1</a></li>
+                                  <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+                                  <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
+                                  <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+{% endblock %}

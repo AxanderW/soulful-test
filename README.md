@@ -1,2 +1,2 @@
-# soulful-test
-soulful test site
+# soulful-platform
+Soulful web plaform

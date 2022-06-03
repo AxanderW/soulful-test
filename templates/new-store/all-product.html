@@ -1,0 +1,291 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% block title %}
+<title>All Products</title>
+{% endblock %}
+{% block body %}
+        <!-- Contant Start -->
+        <div class="content">
+            <section class="breadcrumb-wrap">
+                <div class="container">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="#"><i class="fal fa-home-lg"></i></a></li>
+                          <li class="breadcrumb-item active" aria-current="page">All products</li>
+                        </ol>
+                    </nav>
+                </div>
+            </section>
+            <section class="all-product-wrap">
+                <div class="container">
+                    <div class="all-product-row">
+                        <div class="all-product-filter">
+                            <div class="product-filter-content">
+                                <h6>Healing</h6>
+                                <div class="product-filter-content-inner product-filter-toggle">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1" name="example1" checked>
+                                        <label class="custom-control-label" for="customCheck1">Sed ut pers  <span>(411)</span></label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck2" name="example1">
+                                        <label class="custom-control-label" for="customCheck2">Sed ut pers  <span>(131)</span></label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck3" name="example1">
+                                        <label class="custom-control-label" for="customCheck3">Sed ut pers  <span>(56)</span></label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck4" name="example1">
+                                        <label class="custom-control-label" for="customCheck4">Sed ut pers  <span>(8)</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-filter-content">
+                                <h6>Stone</h6>
+                                <div class="product-filter-content-inner product-filter-toggle">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1" name="example1" checked>
+                                        <label class="custom-control-label" for="customCheck1">Sed ut pers  <span>(411)</span></label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck2" name="example1">
+                                        <label class="custom-control-label" for="customCheck2">Sed ut pers  <span>(131)</span></label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck3" name="example1">
+                                        <label class="custom-control-label" for="customCheck3">Sed ut pers  <span>(56)</span></label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck4" name="example1">
+                                        <label class="custom-control-label" for="customCheck4">Sed ut pers  <span>(8)</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-filter-content">
+                                <h6>PRICE</h6>
+                                <div class="price-slider-wrap product-filter-toggle">
+                                    <div class="slider-box">
+                                        <input type="text" id="priceRange1" readonly>
+                                        <input type="text" id="priceRange2" readonly>
+                                    </div>
+                                    <div id="price-range" class="slider"></div>
+                                </div>
+                            </div>
+                            <div class="product-filter-content">
+                                <h6>Color</h6>
+                                <div class="color-wrap product-filter-toggle">
+                                    <ul>
+                                        <li class="black-clr"><span></span></li>
+                                        <li class="brown-clr"><span></span></li>
+                                        <li class="skin-clr"><span></span></li>
+                                        <li class="gray-clr"><span></span></li>
+                                        <li class="white-clr"><span></span></li>
+                                        <li class="blue-clr"><span></span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button class="general-btn">Submit</button>
+                        </div>
+                        <div class="all-product-content">
+                            <div class="sort-wrap">
+                                <h4>Stones <span>(133)</span></h4>
+                                <ul>
+                                    <li>
+                                        <p>Show products:</p>
+                                        <label for="" class="show-product">
+                                            <select name="" id="">
+                                                <option value="">10</option>
+                                                <option value="">20</option>
+                                                <option value="" selected>30</option>
+                                                <option value="">50</option>
+                                                <option value="">100</option>
+                                            </select>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <p>Sort:</p>
+                                        <label for="" class="product-sort">
+                                            <select name="" id="">
+                                                <option value="">popular</option>
+                                                <option value="">popular1</option>
+                                                <option value="">popular2</option>
+                                                <option value="">popular3</option>
+                                                <option value="">popular4</option>
+                                            </select>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="all-product-here">
+                                <div class="best-product-slide-wrap">
+                                    <div class="best-product-slide" style="width: 100%; display: inline-block;">
+                                        <div class="best-seller-img">
+                                            <img src="{% static 'images/product-1.png' %}" alt="">
+                                            <a href="javascript:void(0)" class="favr-product">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                            <div class="add-to-cart-btn">
+                                                <a href="#" class="general-btn">Add to cart</a>
+                                            </div>
+                                        </div>
+                                        <p>Stones</p>
+                                        <ul class="new-price">
+                                            <li class="new-p">$89.99</li>
+                                            <li class="old-p">$119.99</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="best-product-slide-wrap">
+                                    <div class="best-product-slide" style="width: 100%; display: inline-block;">
+                                        <div class="best-seller-img">
+                                            <img src="{% static 'images/product-2.png' %}" alt="">
+                                            <a href="javascript:void(0)" class="favr-product my-favr">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                            <div class="add-to-cart-btn">
+                                                <a href="#" class="general-btn">Add to cart</a>
+                                            </div>
+                                        </div>
+                                        <p>Stones</p>
+                                        <ul>
+                                            <li>$119.99</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="best-product-slide-wrap">
+                                    <div class="best-product-slide" style="width: 100%; display: inline-block;">
+                                        <div class="best-seller-img">
+                                            <img src="{% static 'images/product-1.png' %}" alt="">
+                                            <a href="javascript:void(0)" class="favr-product">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                            <div class="add-to-cart-btn">
+                                                <a href="#" class="general-btn">Add to cart</a>
+                                            </div>
+                                        </div>
+                                        <p>Stones</p>
+                                        <ul>
+                                            <li>79.99</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="best-product-slide-wrap">
+                                    <div class="best-product-slide" style="width: 100%; display: inline-block;">
+                                        <div class="best-seller-img">
+                                            <img src="{% static 'images/product-2.png' %}" alt="">
+                                            <a href="javascript:void(0)" class="favr-product">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                            <div class="add-to-cart-btn">
+                                                <a href="#" class="general-btn">Add to cart</a>
+                                            </div>
+                                        </div>
+                                        <p>Stones</p>
+                                        <ul>
+                                            <li>79.99</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="best-product-slide-wrap">
+                                    <div class="best-product-slide" style="width: 100%; display: inline-block;">
+                                        <div class="best-seller-img">
+                                            <img src="{% static 'images/product-1.png' %}" alt="">
+                                            <a href="javascript:void(0)" class="favr-product my-favr">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                            <div class="add-to-cart-btn">
+                                                <a href="#" class="general-btn">Add to cart</a>
+                                            </div>
+                                        </div>
+                                        <p>Stones</p>
+                                        <ul>
+                                            <li>$119.99</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="best-product-slide-wrap">
+                                    <div class="best-product-slide" style="width: 100%; display: inline-block;">
+                                        <div class="best-seller-img">
+                                            <img src="{% static 'images/product-2.png' %}" alt="">
+                                            <a href="javascript:void(0)" class="favr-product">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                            <div class="add-to-cart-btn">
+                                                <a href="#" class="general-btn">Add to cart</a>
+                                            </div>
+                                        </div>
+                                        <p>Stones</p>
+                                        <ul>
+                                            <li>79.99</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="best-product-slide-wrap">
+                                    <div class="best-product-slide" style="width: 100%; display: inline-block;">
+                                        <div class="best-seller-img">
+                                            <img src="{% static 'images/product-1.png' %}" alt="">
+                                            <a href="javascript:void(0)" class="favr-product">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                            <div class="add-to-cart-btn">
+                                                <a href="#" class="general-btn">Add to cart</a>
+                                            </div>
+                                        </div>
+                                        <p>Stones</p>
+                                        <ul>
+                                            <li>79.99</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="best-product-slide-wrap">
+                                    <div class="best-product-slide" style="width: 100%; display: inline-block;">
+                                        <div class="best-seller-img">
+                                            <img src="{% static 'images/product-2.png' %}" alt="">
+                                            <a href="javascript:void(0)" class="favr-product my-favr">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                            <div class="add-to-cart-btn">
+                                                <a href="#" class="general-btn">Add to cart</a>
+                                            </div>
+                                        </div>
+                                        <p>Stones</p>
+                                        <ul>
+                                            <li>$119.99</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="best-product-slide-wrap">
+                                    <div class="best-product-slide" style="width: 100%; display: inline-block;">
+                                        <div class="best-seller-img">
+                                            <img src="{% static 'images/product-1.png' %}" alt="">
+                                            <a href="javascript:void(0)" class="favr-product">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                            <div class="add-to-cart-btn">
+                                                <a href="#" class="general-btn">Add to cart</a>
+                                            </div>
+                                        </div>
+                                        <p>Stones</p>
+                                        <ul>
+                                            <li>79.99</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <nav class="custom-navigation">
+                                <span>Page</span>
+                                <ul class="pagination">
+                                  <li class="page-item active"><a class="page-link" href="javascript:void(0);">1</a></li>
+                                  <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+                                  <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
+                                  <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Contant End -->
+{% endblock %}

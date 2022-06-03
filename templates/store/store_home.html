@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Home</title>
+</head>
+<body>
+    <h1>{{store.name}}</h1>
+    <section id='main-banners'>
+        {% for banner in main_banners %}
+            <img src="{{ banner.image.url }}" alt="store_banner">
+        {% empty %}
+            <h1>Some default banner</h1><img src="" alt="">
+        {% endfor %}
+    </section>
+    <section id='customer-promise'>
+        {% for promise in store_customer_promise %}
+            <img src="{{ promise.icon.url }}" alt="">
+            <h2>{{ promise.title }}</h2>
+            <p>{{ promise.description }}</p>
+
+        {% empty %}
+            <h1>Some generic promise</h1><img src="" alt="">
+        {% endfor %}
+    </section>
+    <section id='store-sale-products'>
+        <ul>
+            {% for sale_cat in store_sale_products %}
+                <li>
+                    {{ sale_cat.sale_cat.name }}
+                </li>
+            {% empty %}
+                <h3>No sale categories yet...</h3>
+            {% endfor %}
+        </ul>
+        <div class='sale-products'>
+            {% for product in  store_sale_products %}
+                <a href="{% url 'store-product-detail' product.store_product.product.pk %}"><img src="{{ product.store_product.product.image.url }}" alt=""></a>
+                <h2>{{ product.store_product.product.name }}</h2>
+                <h3>$ {{ product.store_product.price }}</h3>
+            {% empty  %}
+                <h5>No products yet...</h5>
+            {% endfor %}
+
+        </div>
+    </section>
+    <section id='choose-us'>
+        <h1>Why Choose Us?</h1>
+        {% for store_choose in store_choose_us %}
+            <img src="{{ store_choose.icon.url }}" alt="">
+            <h2>{{ store_choose.title }}</h2>
+            <p>{{ store_choose.description }}</p>
+
+        {% empty %}
+            <h1>Some generic chooose</h1><img src="" alt="">
+        {% endfor %}
+    </section>
+    <section id='featured-products'>
+        <h1>Featured Items</h1>
+        {% for product in store_feat_products %}
+            <div>
+                <div class='row'>
+                    <div class='col-6 feat-product'>
+                        <h2>{{ product.store_product.product.name }}</h2>
+                        <a href="{% url 'store-product-detail' product.store_product.pk %}"><img src="{{ product.store_product.product.image.url }}" alt=""></a>
+                        <h3>$ {{ product.store_product.price }}</h3>
+                    </div>
+                    <div class='col-6 feat-product-description'>
+                        <h2>Description</h2>
+                        <p>{{ product.store_product.description }}</p>
+                    </div>
+                </div>
+            </div>
+        {% empty %}
+            <h2>No featured products yet...</h2>
+        {% endfor %}
+    </section>
+    <section id='latest-blog'>
+        <h1>Lastest Blog</h1>
+    </section>
+    <section id='news-letter'>
+        News Letter
+    </section>
+    <section id='footer'>
+        Footer
+    </section>
+</body>
+</html>

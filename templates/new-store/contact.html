@@ -1,0 +1,55 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% block title %}
+<title>Contact</title>
+{% endblock %}
+
+{% block shipment %}
+<div class="free-shipment-wrap">
+    <div class="container">
+        <div class="free-shipment-content">
+            <p>Free shipment from $200</p>
+            <p>FREE 30 DAY RETURNS ON YOUR ORDERS</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block body %}
+<!-- Contant Start -->
+<div class="content">
+    <section class="breadcrumb-wrap">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#"><i class="fal fa-home-lg"></i></a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Sign Up</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+    <section class="signup-wrap contact-wrap">
+        <div class="container">
+            <a href="javascript:void(0)" class="arrow-link back-link"><i class="far fa-arrow-left"></i> Back to shop</a>
+            <div class="signup-content">
+                <h5>Contact Us</h5>
+                <p>Lorem Ipsum is simply dummy text of the printing <br>
+                    and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                    1500s</p>
+
+                <form action="">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="First Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Last Name">
+                    </div>
+                    <div class="form-group">
+                        <textarea type="text" class="form-control" placeholder="Message"></textarea>
+                    </div>
+                    <button type="button" class="general-btn">Sign up</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}
